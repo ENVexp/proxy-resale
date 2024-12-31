@@ -2,7 +2,6 @@ const express = require('express');
 const axios = require('axios');
 
 const app = express();
-const PORT = 3000;
 
 app.get('/teste', async (req, res)=>{
     try {
@@ -21,6 +20,4 @@ app.get('/teste', async (req, res)=>{
     }
 })
 
-app.listen(PORT, () => {
-    console.log(`http://localhost:${PORT}`);
-});
+module.exports = app;
